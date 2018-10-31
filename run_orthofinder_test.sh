@@ -32,7 +32,7 @@ read -p "Do you want to proceed? y/n: " CHECK1
 for i in $(ls $SCRATCH/data_downloads/*/*.pep.all.fa.gz)
 do
     j=`echo $i | rev | cut -d'/' -f1 | rev | cut -d'.' -f1`  # using the Ensemble file name's first field before a '.' as new names for unzipped files
-    zcat $i > $j  # already in new directory
+    zcat $i > $j.fa  # already in new directory
 done
 
 # this .sb script runs Orthofiner with all fastas in $SCRATCH/orthofinder/peptide_all
@@ -62,7 +62,7 @@ read -p "Do you want to proceed? y/n: " CHECK2
 for k in $(ls $SCRATCH/data_downloads/*/*.pep.abinitio.fa.gz)
 do
     l=`echo $k | rev | cut -d'/' -f1 | rev | cut -d'.' -f1`
-    zcat $k > $l
+    zcat $k > $l.fa
 done
 
 # this .sb script runs Orthofinder with all fastas in $SCRATCH/orthofinder/peptide_abinitio
