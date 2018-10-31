@@ -61,7 +61,7 @@ read -p "Do you want to proceed? y/n: " CHECK2
 # using the Ensemble file name first field before a '.' as new names for unzipped files
 for k in $(ls $SCRATCH/data_downloads/*/*.pep.abinitio.fa.gz)
 do
-    l=`echo $i | rev | cut -d'/' -f1 | rev | cut -d'.' -f1`
+    l=`echo $k | rev | cut -d'/' -f1 | rev | cut -d'.' -f1`
     zcat $k > $l
 done
 
