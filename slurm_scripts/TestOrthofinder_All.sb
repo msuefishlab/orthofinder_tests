@@ -13,4 +13,4 @@
 
 conda activate my_orthofinder_env
 
-orthofinder -S diamond -f $SCRATCH/orthofinder/peptide_all -t 32
+orthofinder -S diamond -f $SCRATCH/orthofinder/peptide_all/peptide_all_fastas -t 32

@@ -13,4 +13,4 @@
 
 conda activate my_orthofinder_env
 
-orthofinder -S diamond -f $SCRATCH/orthofinder/peptide_abinitio -t 32
+orthofinder -S diamond -f $SCRATCH/orthofinder/peptide_abinitio/peptide_abinitio_fastas -t 32
