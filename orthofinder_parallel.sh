@@ -13,8 +13,8 @@ orthofinder -f $PWD -op > orthofinder_op.out
 source /mnt/home/lueckeda/anaconda3/bin/deactivate
 
 # formatted files are in Results/WorkingDirectory
-# this will automatically go into most Results directory (the one that was just created)
-latest=`ls -td | head -n1`
+# this will automatically go into newest Results directory (the one that was just created)
+latest=`ls Results* -td | head -n1`
 cd $latest/WorkingDirectory
 ls
 
