@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-# notes for orthofinder parallelizing
 # use conda installs for orthofinder, blast, parafly
 # use Git pull for HpcGridRunner (in ~/GitRepos/)
 # use module MAKER/2.31.9 
