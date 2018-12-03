@@ -3,6 +3,7 @@
 # use conda installs for orthofinder, blast, parafly
 # use Git pull for HpcGridRunner (in ~/GitRepos/)
 # use module MAKER/2.31.9 
+module load MAKER/2.31.9
 
 # run from inside fasta directory
 
