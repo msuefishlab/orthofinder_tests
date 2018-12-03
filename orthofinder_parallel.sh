@@ -6,9 +6,9 @@
 
 # format the fastas/blastdbs, gather necessary commands
 # using my conda orthofinder environment
-conda activate my_orthofinder_env
+source /mnt/home/lueckeda/anaconda3/bin/activate my_orthofinder_env
 orthofinder -f fasta_directory/ -op > orthofinder_op.out
-conda deactivate
+source /mnt/home/lueckeda/anaconda3/bin/deactivate
 
 # formatted files are in Results/WorkingDirectory
 # this will automatically go into most Results directory (the one that was just created)
