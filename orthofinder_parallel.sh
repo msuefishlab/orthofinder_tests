@@ -4,6 +4,7 @@
 # use Git pull for HpcGridRunner (in ~/GitRepos/)
 # use module MAKER/2.31.9 
 
+# run from inside fasta directory
 
 # format the fastas/blastdbs, gather necessary commands
 # using my conda orthofinder environment
