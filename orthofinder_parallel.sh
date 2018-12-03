@@ -14,7 +14,7 @@ source /mnt/home/lueckeda/anaconda3/bin/deactivate
 
 # formatted files are in Results/WorkingDirectory
 # this will automatically go into most Results directory (the one that was just created)
-latest=`ls -t | head -n1`
+latest=`ls -td | head -n1`
 cd $latest/WorkingDirectory
 ls
 
