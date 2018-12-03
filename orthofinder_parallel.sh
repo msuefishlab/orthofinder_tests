@@ -4,10 +4,11 @@
 # use Git pull for HpcGridRunner (in ~/GitRepos/)
 # use module MAKER/2.31.9 
 
+
 # format the fastas/blastdbs, gather necessary commands
 # using my conda orthofinder environment
 source /mnt/home/lueckeda/anaconda3/bin/activate my_orthofinder_env
-orthofinder -f fasta_directory/ -op > orthofinder_op.out
+orthofinder -f $PWD -op > orthofinder_op.out
 source /mnt/home/lueckeda/anaconda3/bin/deactivate
 
 # formatted files are in Results/WorkingDirectory
